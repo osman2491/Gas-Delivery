@@ -12,8 +12,10 @@ body {
     font-family: 'Quicksand', sans-serif;
     font-size: 25px;
 	text-align: center;
-	overflow-x: hidden;
-=======
+  overflow-x: hidden;
+}
+
+  
 #cart-items {
   position: absolute;
   top: 90%;
@@ -56,11 +58,11 @@ body {
 	background-size: cover;
 	width: 100%;
 	height: auto;
-	color:;
+	
 }
 
 div#about-us h3 {
-    padding-top: 1%;
+    padding-top: 10%;
 
     font-family: 'Kaushan Script', cursive;
     font-size: 50px;
@@ -93,7 +95,7 @@ div#features h3{
 
 
 div#structure {
-    padding: 
+   
     text-align: center;
 }
 
@@ -134,7 +136,6 @@ div#structure {
 
 }
 
-=======
 
 html,
 body {

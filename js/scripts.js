@@ -1,7 +1,6 @@
 
 
-=======
-(function($) {
+$(function() {
   "use strict"; // Start of use strict
   //default slide up and hide cart details
   
@@ -74,7 +73,8 @@
       
     });
   });
-})(jQuery); // End of use strict
+})
+ // End of use strict
 $("#mp").click(function(){
   $("#mpesa").show();
 });
@@ -126,4 +126,4 @@ $("#vs").dblclick(function(){
 function vs(){
   
   prompt("PLEASE ENTER YOUR CARD SECURITY PIN")
-  alert("THANK YOU FOR SHOPPING WITH US ")
+  alert("THANK YOU FOR SHOPPING WITH US ")}
