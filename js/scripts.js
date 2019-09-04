@@ -1,3 +1,6 @@
+
+
+=======
 (function($) {
   "use strict"; // Start of use strict
   //default slide up and hide cart details
@@ -124,4 +127,3 @@ function vs(){
   
   prompt("PLEASE ENTER YOUR CARD SECURITY PIN")
   alert("THANK YOU FOR SHOPPING WITH US ")
-}
