@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -26,6 +27,410 @@
       </div>
     </div>
   </div>
+=======
+<head>
+
+
+	<title> cost</title>
+	<!-- google fonts -->
+	<!-- css stylesheet -->
+	<link rel="stylesheet" href="css/styles.css">
+	<!-- font awesome -->
+	<script defer src="https:use.fontawesome.com/releases/v5.8.0/js/all.js"></script>
+	<!-- bootstrap stylesheet -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Gas Delivery.</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="css/styles.css" rel="stylesheet" type="text/css">
+	<script src="js/jquery-3.4.1.js"></script>
+	<script src="js/scripts.js"></script>
+</head>
+
+<body>
+
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="nav-bar">
+		<div class="container">
+
+			<a class="navbar-brand" href="#page-top"><img id="header-img"
+					src="https://lh3.googleusercontent.com/zzt1GGHbYUDUJFlab1mtlwWtVJ6b9EpgTLUDiRh6HoVLsus48U2OIV5Q4ShdacLQkDt1QWBbosV8asJmkV8A5ZPTukY9c9H2rPn3g-NX5a4vCSxWY9qOLcqwhbQyX-pPyloQavJEfQ=s24-p-k"
+					alt="logo" /> <span class="hidden-sm-down">GAS MTAANI</span> <span class="hidden-md-up"> SS
+				</span></a>
+
+			<div class="" id="navbarResponsive">
+				<ul class="navbar-expand navbar-nav ml-auto">
+
+					<li class="nav-item pl-2 pr-2">
+						<a class="nav-link js-scroll-trigger" href="#Product"> <i
+								class="fas fa-list-alt hidden-md-up"></i> <span class="hidden-sm-down">Product
+							</span></a>
+					</li>
+
+					<li class="nav-item pl-2 pr-2" style="border-bottom:1px solid gray;">
+						<div class="cart">
+							<i class="fa fa-shopping-basket fa-2x"></i>
+							<i class="fa fa-caret-down"></i>
+							<!--br-->
+							<span id="items-basket" class="text-center align-top">0</span>
+						</div>
+						<div id="cart-items"
+							class="bg-dark card text-white text-center col-lg-3 col-md-3 col-sm-6 col-xs-6">
+							<div class="card-body">
+								<span id="emptyCart">Your shopping cart is EMPTY </span>
+								<ol class="list-group list-group-flush" id="list-item">
+								</ol>
+
+							</div>
+							<div class="card-title">Total : <span id="total-price">ksh0</span></div>
+							<p>Payment Options:</p>
+
+							<button id="mp">CHECKOUT MPESA</button>
+							<input type="tel" id="mpesa" placeholder="ENTER YOUR NUMBER"></input>
+							<button id="mpesab" onclick="mp()">PAY</button>
+							<br>
+
+							<button id="am">CHECKOUT AIRTEL</button>
+							<input type="tel" id="airtel" placeholder="ENTER YOUR NUMBER"></input>
+							<button id="airtelb" onclick="am()">PAY</button>
+							<br>
+
+							<button id="vs">CHECKOUT VISA</button>
+							<input type="tel" id="visa" placeholder="ENTER YOUR CARD NUMBER"></input>
+							<button id="visab" onclick="vs()">PAY</button>
+
+							<!--<ol id="list-item">
+				  </ol>
+	  
+				  <div class="total-text">
+					<p>Total: </p>
+					<p id="total-price"></p>
+				  </div>-->
+						</div>
+						<!--i class="fas fa-shopping-bag shopping-cart nav-link"></i-->
+					</li>
+				</ul>
+
+			</div>
+
+		</div>
+	</nav>
+
+	<!-- about us section. talking about what we do. -->
+	<div class="container-full" id="about-us">
+		<h3>About Us.</h3>
+		<p>
+			Chap Gas is the ultimate Online platform for everyday gas order and delivery services at your
+			convenience.<br>
+			With our continued business innovation and customer service enhancement,<br> Chap Gas is commited to
+			ensuring prompt delivery of our products and services regardless of location.<br>
+			We at Chap Gas are commited to deliver through fast & personalized service country wide.<br>
+			We are known for our Safe, Reliable & quality products.
+
+		</P>
+	</div>
+
+	<!--end of about us section-->
+
+	<!-- why us section. talking about why customers should choose us. -->
+	<div class="container-full" id="why-us">
+		<h3>Why Use Us.</h3>
+		<p>
+			We offer technology centered solutions that makes everyday life much more pleasing & comfortable<br>
+			We only use verified gas delivery agents with physical presence on selected outlets.<br>
+			Alows you to order your gas at your own convenience.<br>
+
+		</p>
+
+	</div>
+	<br>
+	<br>
+	<!--end of why us section-->
+
+	<!--beginning of features-->
+
+	<div class="container-full" id="features">
+		<div class="container-full" id="features">
+			<h3 class="hr">Features.</h3>
+		</div>
+		<div class="row">
+			<div class="col-md-4" id="structure">
+				<img src="images/phn.png" widh="30%" class="col-md-4" id="easy-to-order">
+				<h4 class="h">Easy to Order.</h4>
+				<p id="easy-to-order-text">
+					Get your Gas with just few clicks.
+				</p>
+			</div>
+			<div class="col-md-4" id="structure">
+				<img src="images/delivry.png" class="col-md-4" id="fast-delivery">
+				<h4 class="h">Fast Delivery.</h4>
+				<p id="fast-delivery-text">
+					No more waiting,at your doorstep within minutes.
+				</p>
+			</div>
+			<div class="col-md-4" id="structure">
+				<img src="images/invoice.png" class="col-md-4" id="invoice">
+				<h4 class="h">Invoice.</h4>
+				<p id="invoice-text">
+					No more receipts invoice will be sent via email,<br>
+					once delivery is done.
+
+				</p>
+			</div>
+		</div>
+	</div>
+	<!---End of features-->
+
+
+	<div class="container-full" id="features">
+		<div class="container-full" id="logo">
+			<h3>BRANDS.</h3>
+		</div>
+		<div class="row">
+			<div class=" iss col-md-3" id="structure">
+				<img class="isp" src="images/totalgaz.png" id="logo">
+
+			</div>
+			<div class="col-md-3 iss" id="structure">
+				<img class="isp" src="images/hashi.jpeg" id="logo">
+
+			</div>
+			<div class="col-md-3 isss " id="structure">
+				<img class="isp" src="images/afrigas.jpeg" id="logo">
+
+			</div>
+			<div class="col-md-3 isss " id="structure">
+				<img class="isp" src="images/progas.png" id="logo">
+
+			</div>
+		</div>
+	</div>
+
+	<section id="Product">
+		<div class="container">
+
+			<div class="row mt-5 mb-3">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<h2 class="align-left">Product list
+					</h2>
+				</div>
+				<!--div class="col-1 text-right my-auto" > 
+			   <i class="fa fa-shopping-cart shopping-cart" style="font-size:5em;"></i>      
+			  </div-->
+			</div>
+			<div class="row justify-content-center align-items-start">
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 mb-3 mt-3">
+					<div class="item">
+						<img class="img-thumbnail" src="images/afrigas-13-kg-Complete-300x300.png" alt="" />
+
+						<div class="row text-center">
+							<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+								<h4 class="product-name">Afrigas complete set</h4>
+							</div>
+							<div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 product-price">
+								ksh6500.00
+							</div>
+							<div class="col-lg-6 col-md- col-xs-12 col-sm-12">
+								<button class="btn btn-success add-to-cart" type="button">Add to cart</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 mb-3 mt-3">
+					<div class="item">
+						<img class="img-thumbnail"
+							src="images/hashi-gas-set-with-6-kg-gas-cylinder-6kg-pressure-regulator-2-meter-horse-pipe-yellow.jpg"
+							alt="" />
+						<div class="row text-center">
+							<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+								<h4 class="product-name">Hashi gas complete set</h4>
+							</div>
+							<div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 product-price">
+								ksh3400
+							</div>
+							<div class="col-lg-6 col-md- col-xs-12 col-sm-12">
+								<button class="btn btn-success add-to-cart" type="button">Add to cart</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 mb-3 mt-3">
+					<div class="item">
+						<img class="img-thumbnail" src="images/SHELL AFRIGAS 6KG REFILL1-800x800.png" alt="" />
+						<div class="row text-center">
+							<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+								<h4 class="product-name">Afrigas complete set</h4>
+							</div>
+							<div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 product-price">
+								ksh3300.00
+							</div>
+							<div class="col-lg-6 col-md- col-xs-12 col-sm-12">
+								<button class="btn btn-success add-to-cart" type="button">Add to cart</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 mb-3 mt-3">
+					<div class="item">
+						<img class="img-thumbnail" src="images/Pro-Gas-6kg.jpg" alt="" />
+						<div class="row text-center">
+							<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+								<h4 class="product-name">6kg Pro gas</h4>
+							</div>
+							<div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 product-price">
+								ksh2300.00
+							</div>
+							<div class="col-lg-6 col-md- col-xs-12 col-sm-12">
+								<button class="btn btn-success add-to-cart" type="button">Add to cart</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 mb-3 mt-3">
+					<div class="item">
+						<img class="img-thumbnail" src="images/Pro-Gas-13kg-Complete.jpg" alt="" />
+						<div class="row text-center">
+							<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+								<h4 class="product-name">ProGas 13kg complete set</h4>
+							</div>
+							<div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 product-price">
+								ksh4000.00
+							</div>
+							<div class="col-lg-6 col-md- col-xs-12 col-sm-12">
+								<button class="btn btn-success add-to-cart" type="button">Add to cart</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 mb-3 mt-3">
+					<div class="item">
+						<div class="safe">
+							<img class="img-thumbnail" src="images/00_mn9a-9o_r84h-ze_k0wy-tq.jpg" alt="" />
+						</div>
+
+						<div class="row text-center">
+							<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+								<h4 class="product-name">Safe gas Complete set</h4>
+							</div>
+							<div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 product-price">
+								8000.00
+							</div>
+							<div class="col-lg-6 col-md- col-xs-12 col-sm-12">
+								<button class="btn btn-success add-to-cart" type="button">Add to cart</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 mb-3 mt-3">
+					<div class="item">
+						<img class="img-thumbnail" src="images/9KG_Total_Gaz7275.jpeg" alt="" />
+						<div class="row text-center">
+							<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+								<h4 class="product-name">total gas 9kg</h4>
+							</div>
+							<div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 product-price">
+								ksh3500.00
+							</div>
+							<div class="col-lg-6 col-md- col-xs-12 col-sm-12">
+								<button class="btn btn-success add-to-cart" type="button">Add to cart</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 mb-3 mt-3">
+					<div class="item">
+						<img class="img-thumbnail" src="images/TOTAL 6KG REFILL-200x200.png" alt="" />
+						<div class="row text-center">
+							<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+								<h4 class="product-name">Product title</h4>
+							</div>
+							<div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 product-price">
+								2500.00
+							</div>
+							<div class="col-lg-6 col-md- col-xs-12 col-sm-12">
+								<button class="btn btn-success add-to-cart" type="button">Add to cart</button>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div
+					class="col-lg-12 col-md-12 col-sm-6 col-xs-6  d-flex justify-content-center align-items-center my-auto">
+					<ul class="navbar-expand navbar-nav">
+						<li class="nav-item pl-2 pr-2">
+							<a href="https://www.linkedin.com/in/monikapatelit/"><i class="fab fa-linkedin"></i></a>
+						</li>
+						<li class="nav-item pl-2 pr-2">
+							<a href="https://www.freecodecamp.org/monikapatelit"><i
+									class="fab fa-free-code-camp"></i></a>
+						</li>
+
+						<li class="nav-item pl-2 pr-2" style="border-bottom:1px solid gray;">
+							Designed with
+							<i class="fab fa-gratipay"></i> by <a href="https://codepen.io/IamMonikaPatel/"
+								target="_blank"> Monika Patel </a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<!-- contact us section with all the social network and email etc. -->
+		<div>
+
+
+
+
+
+
+
+
+
+		</div>
+		<!--Contactsection end-->
 </body>
 
 </html>
